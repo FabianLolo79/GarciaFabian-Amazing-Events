@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+
+    <link rel="shortcut icon" href="./assets/img/Logo_Amazing-Events.ico" type="image/x-icon">
+
+    <!-- Bootstrap v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Icono bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-warning bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img class="logo" src="./assets/img/Logo_Amazing-Events.png" alt="Logo Amazing Events">
+                </a>
+                <div class="d-flex justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="btn btn-outline-danger mx-2" aria-current="page" href="./index.html">Home</a>
+                            <a class="btn btn-outline-danger active mx-2" href="#">Upcomig Events</a>
+                            <a class="btn btn-outline-danger mx-2" href="./pastEvents.html">Past Events</a>
+                            <a class="btn btn-outline-danger mx-2" href="./contact.html">Contact</a>
+                            <a class="btn btn-outline-danger mx-2" href="./stats.html">Stats</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div><h1 class="text-center text-uppercase">Upcoming Events</h1></div>
+    <main>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner align">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/img/Cinema.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/img/Costume_Party.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/Food_Fair.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <form class="row gx-3 gy-2 align-items-center d-flex px-3 justify-content-center py-5 d-flex justify-content-between">
+            <div class="col-auto">
+                <div class="form-check">
+                  <input class="form-check-input mx-2" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Category
+                  </label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Category1
+                  </label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Category2
+                  </label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="form-chck">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Category3
+                  </label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                    <label class="form-check-label" for="autoSizingCheck2">
+                        Category4
+                    </label>
+                </div>
+            </div>
+            <div class="col-auto me-5">
+                <input class="form-control-md px-1" type="search" placeholder="search" size="30px">
+                <a href="#" class="btn-sm btn-outline-primary">
+                    <img class="lupa" src="./assets/img/search-svgrepo-com.svg" alt="lupa-de-boton">
+                </a>
+            </div>
+        </form>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-3">
+            <div class="col">
+              <div class="card p-3">
+                <img src="./assets/img/Museum_Tour.jpg"class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Musseum</h5>
+                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between mt-5 mb-0">
+                    <p class="h-5">Price $99</p>
+                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 card-container">
+                <img src="./assets/img/Costume_Party.jpg" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Costume Party</h5>
+                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between mt-5 mb-0">
+                    <p class="h-5">Price $99</p>
+                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 card-container">
+                <img src="./assets/img/Food_Fair.jpg" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Food Fair</h5>
+                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <div class="d-flex justify-content-between mt-5 mb-0">
+                    <p class="h-5">Price $99</p>
+                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 card-container">
+                <img src="./assets/img/Marathon.jpg" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Marathon</h5>
+                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between mt-5 mb-0">
+                    <p class="h-5">Price $99</p>
+                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 card-container">
+                  <img src="./assets/img/Cinema.jpg" class="card-img-top image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Cinema</h5>
+                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between mt-5 mb-0">
+                        <p class="h-5">Price $99</p>
+                        <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card p-3 card-container">
+                  <img src="./assets/img/Music_Concert.jpg" class="card-img-top image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Music Concert</h5>
+                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between mt-5 mb-0">
+                        <p class="h-5">Price $99</p>
+                        <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </main>
+
+    <footer class="bg-warning bg-gradient d-flex justify-content-between align-items-center mt-1 pb-1">
+        <div class="d-flex">
+            <a class="nav nav-link" href="">
+                <i class="bi bi-instagram text-dark redes"></i>
+            </a>
+            <a class="nav nav-link" href="">
+                <i class="bi bi-facebook text-dark redes"></i>
+            </a> 
+            <a class="nav nav-link" href="">
+                <i class="bi bi-whatsapp text-dark redes"></i>
+            </a>
+        </div>
+        <div>
+            <p class="h1 pe-5">Cohort</p>
+        </div>
+    </footer>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
