@@ -1,9 +1,10 @@
-:root {
-    font-size: 16px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
 }
 .logo {
     width: 10rem;
@@ -18,11 +19,12 @@
 }
 .shadow {
     box-sizing: border-box;
-    box-shadow: -3px -3px 6px grey !important;
+    box-shadow: -10px -10px 10px grey !important;
 }
 table {
     margin: 2rem auto;
-    background-color: aquamarine;
+    padding-bottom: 3rem;
+    font-weight: 400;
 }
 table tr td {
     border: 1px solid black;
@@ -34,16 +36,27 @@ table tr td {
     height: 1.5rem;
 }
 table th {
-    background-color: blueviolet;
+    background-color: grey;
     padding: 0.3rem;
 }
 .titulo {
     padding: 0.3rem;
-    font-weight: bold;
-    background-color: blueviolet
+    font-weight:600 ;
+    font-size: 1.3rem;
+}
+/* statistics */
+.grey {
+    background-color: grey;
+    font-weight:600 ;
 }
 .form {
     width: 50%;
     margin: 2rem auto !important;
+}
+.middle {
+    margin: 2rem auto !important;
+}
+.descr-img {
+    max-height: 400px;
 }
 
