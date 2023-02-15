@@ -32,8 +32,8 @@
                         <div class="navbar-nav">
                             <a class="btn btn-outline-danger mx-2" aria-current="page" href="./index.html">Home</a>
                             <a class="btn btn-outline-danger mx-2" href="./upcomingEvents.html">Upcomig Events</a>
-                            <a class="btn btn-outline-danger active mx-2" href="./pastEvents.html">Past Events</a>
-                            <a class="btn btn-outline-danger mx-2" href="./contact.html">Contact</a>
+                            <a class="btn btn-outline-danger mx-2" href="./pastEvents.html">Past Events</a>
+                            <a class="btn btn-outline-danger active mx-2" href="./contact.html">Contact</a>
                             <a class="btn btn-outline-danger mx-2" href="./stats.html">Stats</a>
                         </div>
                     </div>
@@ -42,11 +42,12 @@
         </nav>
     </header>
 
-    <div><h1 class="text-center text-uppercase">Contact</h1></div>
+   
 
     <main>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner align">
+        
+        <div id="carouselExampleInterval" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./assets/img/Cinema.jpg" class="d-block w-100" alt="...">
               </div>
@@ -66,7 +67,9 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <form class="d-flex flex-column justify-content-center align-items-center" action="POST">
+        <div class="position-absolute top-50 end-50"><h1 class="text-center text-light text-uppercase">Contact</h1></div>
+    
+        <form class="mt-5 ms-5" action="POST">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
@@ -77,24 +80,25 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" cols="25" rows="10"></textarea>
             </div>
             <div class="col-auto d-flex justify-content-end">
                 <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
             </div>
         </form>
+    
     </main>
 
     <footer class="bg-warning bg-gradient d-flex justify-content-between align-items-center mt-1 pb-1">
         <div class="d-flex">
             <a class="nav nav-link" href="">
-                <i class="bi bi-instagram text-dark redes"></i>
+                <i class="bi bi-instagram text-dark fs-3"></i>
             </a>
             <a class="nav nav-link" href="">
-                <i class="bi bi-facebook text-dark redes"></i>
+                <i class="bi bi-facebook text-dark fs-3"></i>
             </a> 
             <a class="nav nav-link" href="">
-                <i class="bi bi-whatsapp text-dark redes"></i>
+                <i class="bi bi-whatsapp text-dark fs-3"></i>
             </a>
         </div>
         <div>

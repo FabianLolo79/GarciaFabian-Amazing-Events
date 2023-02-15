@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-warning bg-gradient">
+        <nav class="navbar navbar-expand-lg bg-warning bg-gradient position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand">
                     <img class="logo" src="./assets/img/Logo_Amazing-Events.png" alt="Logo Amazing Events">
@@ -42,10 +42,10 @@
         </nav>
     </header>
 
-    <div><h1 class="text-center text-uppercase">Upcoming Events</h1></div>
+    
     <main>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner align">
+            <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./assets/img/Cinema.jpg" class="d-block w-100" alt="...">
               </div>
@@ -65,6 +65,7 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="position-absolute top-50 end-50"><h1 class="text-center text-light text-uppercase">Upcoming Events</h1></div>
 
         <form class="row gx-3 gy-2 align-items-center d-flex px-3 justify-content-center py-5 d-flex justify-content-between">
             <div class="col-auto">
@@ -117,8 +118,8 @@
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-3">
             <div class="col">
-              <div class="card p-3">
-                <img src="./assets/img/Museum_Tour.jpg"class="card-img-top image" alt="...">
+              <div class="card h-100 p-3">
+                <img src="./assets/img/Museum_Tour.jpg"class="card-img-top object-fit-cover h-100 image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Musseum</h5>
                   <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -130,8 +131,8 @@
               </div>
             </div>
             <div class="col">
-              <div class="card p-3 card-container">
-                <img src="./assets/img/Costume_Party.jpg" class="card-img-top image" alt="...">
+              <div class="card h-100 p-3">
+                <img src="./assets/img/Costume_Party.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Costume Party</h5>
                   <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -143,8 +144,8 @@
               </div>
             </div>
             <div class="col">
-              <div class="card p-3 card-container">
-                <img src="./assets/img/Food_Fair.jpg" class="card-img-top image" alt="...">
+              <div class="card h-100 p-3">
+                <img src="./assets/img/Food_Fair.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Food Fair</h5>
                   <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -156,8 +157,8 @@
               </div>
             </div>
             <div class="col">
-              <div class="card p-3 card-container">
-                <img src="./assets/img/Marathon.jpg" class="card-img-top image" alt="...">
+              <div class="card h-100 p-3">
+                <img src="./assets/img/Marathon.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Marathon</h5>
                   <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -169,8 +170,8 @@
               </div>
             </div>
             <div class="col">
-                <div class="card p-3 card-container">
-                  <img src="./assets/img/Cinema.jpg" class="card-img-top image" alt="...">
+                <div class="card h-100 p-3">
+                  <img src="./assets/img/Cinema.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title text-center">Cinema</h5>
                     <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -182,8 +183,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card p-3 card-container">
-                  <img src="./assets/img/Music_Concert.jpg" class="card-img-top image" alt="...">
+                <div class="card h-100 p-3">
+                  <img src="./assets/img/Music_Concert.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title text-center">Music Concert</h5>
                     <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -197,16 +198,16 @@
           </div>
     </main>
 
-    <footer class="bg-warning bg-gradient d-flex justify-content-between align-items-center mt-1 pb-1">
+    <footer class="bg-warning bg-gradient d-flex justify-content-between align-items-center mt-3 pb-1">
         <div class="d-flex">
             <a class="nav nav-link" href="">
-                <i class="bi bi-instagram text-dark redes"></i>
+                <i class="bi bi-instagram text-dark fs-3"></i>
             </a>
             <a class="nav nav-link" href="">
-                <i class="bi bi-facebook text-dark redes"></i>
+                <i class="bi bi-facebook text-dark fs-3"></i>
             </a> 
             <a class="nav nav-link" href="">
-                <i class="bi bi-whatsapp text-dark redes"></i>
+                <i class="bi bi-whatsapp text-dark fs-3"></i>
             </a>
         </div>
         <div>
