@@ -1,4 +1,4 @@
-let contenedor = document.getElementById('contenedor');
+let contenedor = document.getElementById('Contenedor');
 let fragment = document.createDocumentFragment();
 const diaActual = Date.parse(data.currentDate);
 
