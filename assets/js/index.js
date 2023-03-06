@@ -23,4 +23,37 @@ for (let element of data.events) {
 contenedor.appendChild(fragment);
 
 
+let form_container_check = document.getElementsByClassName('form_container_check');
+//console.log(form_container_check);
 
+const mapping = data.events.map(element => element.category);
+
+element.forEach(category => {
+    let div = document.createElement('div');
+    div.classList.add('col-auto');
+    div.innerHTML = 
+        `
+        <div class="form-check category1 category" id="form-category"> 
+            <input class="form-check-input mx-2" type="checkbox" id=${Category} value=${Category}>
+            <label class="form-check-label" for=${Category}>
+                ${Category}
+            </label>
+        </div>
+        
+        `
+});
+
+/*  estructura donde estaban los check-box
+    let div = document.createElement('div');
+    div.classList.add('col-auto');
+    div.innerHTML = 
+        `
+        <div class="form-check category1 category" id="form-category"> 
+            <input class="form-check-input mx-2" type="checkbox" id=${Category} value=${Category}>
+            <label class="form-check-label" for=${Category}>
+                ${Category}
+            </label>
+        </div>
+        
+        `
+*/
