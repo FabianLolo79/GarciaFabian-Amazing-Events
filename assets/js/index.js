@@ -22,38 +22,34 @@ for (let element of data.events) {
 }
 contenedor.appendChild(fragment);
 
+// CATEGORY 
+let formContainerCheck = document.getElementsByClassName('formContainerCheck');
+let fragmentCheck = document.createDocumentFragment();
+//console.log(formContainerCheck);
 
-let form_container_check = document.getElementsByClassName('form_container_check');
-//console.log(form_container_check);
+//const filterCategory = data.events.filter(element => element.category);
+//console.log(filterCategory);
 
-const mapping = data.events.map(element => element.category);
+//error comienza aqui
+for (let element of data.events) {
+    let cat = new Object(element.category);
 
-element.forEach(category => {
     let div = document.createElement('div');
     div.classList.add('col-auto');
     div.innerHTML = 
         `
         <div class="form-check category1 category" id="form-category"> 
-            <input class="form-check-input mx-2" type="checkbox" id=${Category} value=${Category}>
-            <label class="form-check-label" for=${Category}>
-                ${Category}
+            <input class="form-check-input mx-2" type="checkbox" id=${cat} value=${cat}>
+            <label class="form-check-label" for=${cat}>
+                ${cat}
             </label>
         </div>
-        
         `
-});
+        fragmentCheck.appendChild(div);
+}
+console.log(fragmentCheck);
+formContainerCheck.appendChild(fragmentCheck);
 
-/*  estructura donde estaban los check-box
-    let div = document.createElement('div');
-    div.classList.add('col-auto');
-    div.innerHTML = 
-        `
-        <div class="form-check category1 category" id="form-category"> 
-            <input class="form-check-input mx-2" type="checkbox" id=${Category} value=${Category}>
-            <label class="form-check-label" for=${Category}>
-                ${Category}
-            </label>
-        </div>
-        
-        `
-*/
+
+
+
