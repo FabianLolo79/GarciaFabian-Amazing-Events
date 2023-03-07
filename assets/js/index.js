@@ -27,28 +27,46 @@ let formContainerCheck = document.getElementsByClassName('formContainerCheck');
 let fragmentCheck = document.createDocumentFragment();
 //console.log(formContainerCheck);
 
-//const filterCategory = data.events.filter(element => element.category);
-//console.log(filterCategory);
+const mapeo = data.events.map(element => element.category);
+//console.table(mapeo);
 
-//error comienza aqui
-for (let element of data.events) {
-    let cat = new Object(element.category);
+// logra sacar los valores duplicados PERFECT
+let categoriesArray = new Set(mapeo);
+let result = [...categoriesArray];
+console.table(result);
 
+//capaz este anda en conjunto con la linea 35 y 36 ESTO NO FUNCIONA
+/* result.forEach(element => {
     let div = document.createElement('div');
     div.classList.add('col-auto');
     div.innerHTML = 
         `
         <div class="form-check category1 category" id="form-category"> 
-            <input class="form-check-input mx-2" type="checkbox" id=${cat} value=${cat}>
-            <label class="form-check-label" for=${cat}>
-                ${cat}
+            <input class="form-check-input mx-2" type="checkbox" id=${element.category} value=${element.category}>
+            <label class="form-check-label" for=${element.category}>
+                ${element.category}
             </label>
         </div>
         `
         fragmentCheck.appendChild(div);
-}
-console.log(fragmentCheck);
-formContainerCheck.appendChild(fragmentCheck);
+})
+formContainerCheck.appendChild(fragmentCheck); */
+
+
+
+
+/* ejemplo SET array sacando los repetidos
+
+    let data = [1,2,6,1,2,5,9,'33','33'];
+
+    const dataArr = new Set(data);
+
+    let result = [...dataArr];
+
+    console.log(result); //[1,2,6,5,9,'33']
+
+*/
+
 
 
 
