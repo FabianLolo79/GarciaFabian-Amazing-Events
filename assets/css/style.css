@@ -9,6 +9,11 @@
 .logo {
     width: 10rem;
 }
+.carousel-inner {
+    height: 600px;
+    overflow: hidden;
+}
+
 .image {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

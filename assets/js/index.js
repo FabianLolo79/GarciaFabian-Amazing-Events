@@ -35,37 +35,24 @@ let categoriesArray = new Set(mapeo);
 let result = [...categoriesArray];
 console.table(result);
 
-//capaz este anda en conjunto con la linea 35 y 36 ESTO NO FUNCIONA
-/* result.forEach(element => {
+//NO ANDA!!0
+for (let res of result) {
     let div = document.createElement('div');
     div.classList.add('col-auto');
     div.innerHTML = 
         `
         <div class="form-check category1 category" id="form-category"> 
-            <input class="form-check-input mx-2" type="checkbox" id=${element.category} value=${element.category}>
-            <label class="form-check-label" for=${element.category}>
-                ${element.category}
+            <input class="form-check-input mx-2" type="checkbox" id=${res.category} value=${res.category}>
+            <label class="form-check-label" for=${res.category}>
+                ${res.category}
             </label>
         </div>
         `
         fragmentCheck.appendChild(div);
-})
-formContainerCheck.appendChild(fragmentCheck); */
+}
+formContainerCheck.appendChild(fragmentCheck);
 
 
-
-
-/* ejemplo SET array sacando los repetidos
-
-    let data = [1,2,6,1,2,5,9,'33','33'];
-
-    const dataArr = new Set(data);
-
-    let result = [...dataArr];
-
-    console.log(result); //[1,2,6,5,9,'33']
-
-*/
 
 
 
