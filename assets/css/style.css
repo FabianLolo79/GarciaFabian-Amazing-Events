@@ -69,12 +69,19 @@ table th {
         align-items: center;
         align-content: center;
     }
-    #input-search {
-        margin: 1rem 0rem 0rem 3rem;
-    }
     .category1 {
         position: relative;
         left: -1.2rem;
+    }
+    .carousel-inner {
+        height: 250px;
+        overflow: hidden;
+    }
+    .conte {
+        flex-direction: column;
+    }
+    .nav-search {
+        justify-content: center; /* revisar NO ANDA */
     }
 }
 
@@ -95,3 +102,9 @@ table th {
         left: -1.2rem;
     }
 }
+
+/* @media only screen and (max-width: 1300) {
+    .nav-search {
+        padding-right: 1rem;
+    }
+} */

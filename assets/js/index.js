@@ -3,7 +3,7 @@ let fragment = document.createDocumentFragment();
 
 for (let element of data.events) {
     let div = document.createElement('div');
-    div.classList.add('card', 'mx-5');
+    div.classList.add('card', 'ms-5', 'shadow');
     div.style.width = "20rem";
     div.innerHTML = 
         `   
@@ -23,9 +23,9 @@ for (let element of data.events) {
 contenedor.appendChild(fragment);
 
 // CATEGORY 
-let formContainerCheck = document.getElementsByClassName('formContainerCheck');
+let conte = document.getElementById('conte');
 let fragmentCheck = document.createDocumentFragment();
-//console.log(formContainerCheck);
+//console.log(fragmentCheck);
 
 const mapeo = data.events.map(element => element.category);
 //console.table(mapeo);
@@ -33,24 +33,25 @@ const mapeo = data.events.map(element => element.category);
 // logra sacar los valores duplicados PERFECT
 let categoriesArray = new Set(mapeo);
 let result = [...categoriesArray];
-console.table(result);
+//console.table(result);
 
-//NO ANDA!!0
 for (let res of result) {
-    let div = document.createElement('div');
-    div.classList.add('col-auto');
-    div.innerHTML = 
+    let form = document.createElement('form');
+    form.classList.add('d-flex', 'py-5');
+    form.innerHTML = 
         `
-        <div class="form-check category1 category" id="form-category"> 
-            <input class="form-check-input mx-2" type="checkbox" id=${res.category} value=${res.category}>
-            <label class="form-check-label" for=${res.category}>
-                ${res.category}
-            </label>
-        </div>
+        <div class="col-auto mx-5">
+            <div class="form-check category1 category" id="form-category"> 
+                <input class="form-check-input mx-2 shadow" type="checkbox" value=${res}>
+                <label class="form-check-label" for=${res}>
+                    ${res}
+                </label>
+            </div>
+        </div>    
         `
-        fragmentCheck.appendChild(div);
+        fragmentCheck.appendChild(form);
 }
-formContainerCheck.appendChild(fragmentCheck);
+conte.appendChild(fragmentCheck);
 
 
 
