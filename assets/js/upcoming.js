@@ -11,14 +11,14 @@ for (let element of data.events) {
             div.classList.add('card', 'ms-5', 'shadow');
             div.style.width = "20rem";
             div.innerHTML = 
-                `<img src="${element.image}" class="card-img-top object-fit-cover mt-3 h-100 image" alt="...">
+                `<img src="${element.image}" class="card-img-top object-fit-cover mt-3 image" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center titulo">${element.name}</h5>
                         <p class="card-text text-center">${element.description}</p>
                         <p class="card-text text-center fw-bold">Date: ${element.date}</p>
                         <div class="d-flex justify-content-between mt-5 mb-0">
                             <p class="fw-bold">Precio: $${element.price}</p>
-                            <a href="./description.html" class="btn btn-outline-danger shadow">Go</a>
+                            <a href="./details.html?_id=${element._id}" class="btn btn-outline-danger shadow">Details</a>
                         </div>
                     </div>`
             fragment.appendChild(div);

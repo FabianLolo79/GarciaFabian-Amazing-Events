@@ -10,14 +10,15 @@
     width: 10rem;
 }
 .carousel-inner {
-    height: 600px;
+    height: 61.664953751284685vh;
     overflow: hidden;
 }
-
 .image {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: -2px -2px 10px grey;
+    height: 200px;
+    overflow: hidden;
 }
 .shadow {
     box-sizing: border-box;
@@ -103,8 +104,4 @@ table th {
     }
 }
 
-/* @media only screen and (max-width: 1300) {
-    .nav-search {
-        padding-right: 1rem;
-    }
-} */
+
