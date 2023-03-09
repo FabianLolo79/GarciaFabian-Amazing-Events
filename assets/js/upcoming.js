@@ -46,9 +46,8 @@ for (let res of result) {
         `
         <div class="col-auto mx-5">
             <div class="form-check category1 category" id="form-category"> 
-                <input class="form-check-input mx-2 shadow" type="checkbox" value=${res}>
-                <label class="form-check-label" for=${res}>
-                    ${res}
+                <label class="form-check-label">
+                    ${res} <input class="form-check-input mx-2 shadow" type="checkbox" id=${res} value=${res}>
                 </label>
             </div>
         </div>    
@@ -56,3 +55,18 @@ for (let res of result) {
         fragmentCheckUp.appendChild(form);
 }
 containerCheckUp.appendChild(fragmentCheckUp);
+
+// input checkbox
+//containerCheckHome
+let checkboxes = document.querySelectorAll('input[type=checkbox]');
+//console.log(checkboxes);
+
+checkboxes.forEach( checkbox => {
+    checkbox.addEventListener('change', mostrarCheckCards)
+})
+
+
+function mostrarCheckCards() {
+    let inputsChecked = Array.from(checkboxes).filter(checkbox => checkbox.checked == true);
+    console.log(inputsChecked);
+}
