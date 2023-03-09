@@ -3,9 +3,13 @@
         let dataEvents = data.events;
         
         const id = location.search
-        const parametro = new URLSearchParams(id)
-        const idNumber = parseInt(parametro.get("_id"))
-        const evento = dataEvents.find(element => element._id === idNumber)
+        const parametro = new URLSearchParams(id);
+        //console.log(parametro);
+        const idNumber = parseInt(parametro.get("_id"));
+        //console.log(idNumber);
+
+        const evento = dataEvents.find(element => element._id === idNumber);
+        console.log(evento);
         
         eventContainer.innerHTML = `<div class="row">
         <div class="col-md-5">
@@ -23,5 +27,6 @@
             </div>
         </div>`
         
+
 
 

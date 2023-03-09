@@ -1,4 +1,3 @@
-function viewCards() {
     let contenedor = document.getElementById('containerHome');
     let fragment = document.createDocumentFragment();
 
@@ -23,12 +22,11 @@ function viewCards() {
         fragment.appendChild(div);
     }
     contenedor.appendChild(fragment);
-}
-viewCards();
+
 
 
 // CATEGORY 
-function viewCategory(){
+
     let containerCheckHome = document.getElementById('containerCheckHome');
     let fragmentCheck = document.createDocumentFragment();
     //console.log(fragmentCheck);
@@ -58,11 +56,8 @@ function viewCategory(){
             fragmentCheck.appendChild(form);
     }
 containerCheckHome.appendChild(fragmentCheck);
-}
-viewCategory();
 
-
-
+// input checkbox
 
 
 
