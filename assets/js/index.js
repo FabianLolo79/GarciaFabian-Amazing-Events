@@ -65,7 +65,6 @@ checkboxes.forEach( checkbox => {
     checkbox.addEventListener('change', mostrarCheckCards)
 })
 
-
 function mostrarCheckCards() {
     let inputsChecked = Array.from(checkboxes).filter(checkbox => checkbox.checked == true);
     console.log(inputsChecked);

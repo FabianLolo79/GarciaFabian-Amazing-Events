@@ -68,5 +68,8 @@ checkboxes.forEach( checkbox => {
 
 function mostrarCheckCards() {
     let inputsChecked = Array.from(checkboxes).filter(checkbox => checkbox.checked == true);
-    console.log(inputsChecked);
+   // console.log(inputsChecked);
 }
+
+
+
