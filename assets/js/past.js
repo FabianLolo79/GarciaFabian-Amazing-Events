@@ -1,4 +1,4 @@
-let contenedor = document.getElementById('containerPast');
+let container = document.getElementById('containerPast');
 let fragment = document.createDocumentFragment();
 const diaActual = new Date (data.currentDate);
 
@@ -23,7 +23,7 @@ for (let element of data.events) {
                 fragment.appendChild(div);
                 }
 }
-contenedor.appendChild(fragment);
+container.appendChild(fragment);
 
 // CATEGORY 
 let containerCheckPast = document.getElementById('containerCheckPast');

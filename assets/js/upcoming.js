@@ -1,4 +1,4 @@
-let contenedor = document.getElementById('containerUp');
+let container = document.getElementById('containerUp');
 let fragment = document.createDocumentFragment();
 const diaActual = new Date(data.currentDate);
 
@@ -24,7 +24,7 @@ for (let element of data.events) {
             fragment.appendChild(div);
         }
 }
-contenedor.appendChild(fragment);
+container.appendChild(fragment);
 
 // CATEGORY 
 let containerCheckUp = document.getElementById('containerCheckUp');
