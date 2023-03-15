@@ -1,4 +1,4 @@
-// checks CATEGORY dinámica
+/* ---------- Checks Category dinamic ----------*/
 function createChecks(array) {
     let containerCheckHome = document.getElementById('containerCheckHome');
     let fragmentCheck = document.createDocumentFragment();
@@ -54,10 +54,9 @@ function showCards(array,idcontainer) {
 showCards(data.events, 'containerHome');
 //console.log(showCard(container,data.events));
 
-/* ------------------- */
-//Checkbox Filter
+/* ---------- Checkbox Filter ---------- */
 let selectChecked = [];
-let checkboxes = document.querySelectorAll('input[type="checkbox"]'); //faltaban las comillas en type="checkbox"
+let checkboxes = document.querySelectorAll('input[type="checkbox"]'); 
 checkboxes.forEach(check => check.addEventListener("change", () => {
     selectChecked = [...checkboxes].filter(check => check.checked).map(elem => elem.value.replace(" ",""));
         //console.log(selectChecked);
@@ -75,44 +74,38 @@ function filterArrayToArray(arrayStrings, arrayObject) {
     }
 }
 
-/* ------------------- */
-//Search Filter
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* let inputText = [];
-const inputSearch = document.getElementById('input-search');
+/* ---------- Search Filter ---------- */
+let inputText = [];
+let inputSearch = document.getElementById('input-search');
 inputSearch.addEventListener('keyup', (e) => {
     inputText = inputSearch.value;
-    filterAll(data.category);
+    //filterAll(data.category);
     //console.log(e.target.value);
-    //console.log(filterArrayToString(inputSearch.value, data.events));
-});
+    console.log(filterArrayToString(inputSearch.value, data.events));
+}) 
 
 function filterArrayToString(value, arrayObject) {
-    if (value == '') return arrayObject;
-    let newArray = arrayObject.filter(element => element.category.toLowerCase().includes(value.toLowerCase().trim()))
-    return newArray;
-}  */
-    
+    if (value == '') { 
+        return arrayObject;
+    } else {
+        let newArray = arrayObject.filter(element => element.category
+            .toLowerCase().includes(value.toLowerCase().trim()))
+        return newArray;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //final filters
 /* function filterAll(array) {
@@ -132,4 +125,3 @@ function filterArrayToString(value, arrayObject) {
     }
     console.log(newArray);
 }  */
-
