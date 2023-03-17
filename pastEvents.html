@@ -42,6 +42,7 @@
         </nav>
     </header>
     <main>
+
         <div id="carouselExampleInterval" class="carousel slide pt-1" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="2000">
@@ -85,54 +86,11 @@
             </button>
         </div>
 
+        <!-- Contenedor de los checkbox y search -->
         <div class="d-flex justify-content-around conte" id="containerCheckPast">
-          <!-- <form class="d-flex py-5" id="form">
-              <div class="col-auto mx-5">
-                  <div class="form-check category1 category" id="form-category"> 
-                    <input class="form-check-input mx-2" type="checkbox" id="autoSizingCheck2">
-                    <label class="form-check-label" for="autoSizingCheck2">
-                      Category
-                    </label>
-                  </div>
-              </div>
-              <div class="col-auto mx-5">
-                  <div class="form-check category">
-                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                    <label class="form-check-label" for="autoSizingCheck2">
-                      Category1
-                    </label>
-                  </div>
-              </div>
-              <div class="col-auto mx-5">
-                  <div class="form-check category">
-                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                    <label class="form-check-label" for="autoSizingCheck2">
-                      Category2
-                    </label>
-                  </div>
-              </div>
-              <div class="col-auto mx-5">
-                  <div class="form-check category">
-                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                    <label class="form-check-label" for="autoSizingCheck2">
-                      Category3
-                    </label>
-                  </div>
-              </div>
-              <div class="col-auto mx-5">
-                  <div class="form-check category">
-                      <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                      <label class="form-check-label" for="autoSizingCheck2">
-                          Category4
-                      </label>
-                  </div>
-              </div>
-          </form> -->
-            
           <nav class="navbar ms-5">
                   <form class="d-flex nav-search" role="search">
-                    <input class="form-control shadow" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-danger ms-1 shadow" type="submit">Search</button>
+                    <input class="form-control shadow ms-3" type="search" placeholder="Search" aria-label="Search" id="input-search">
                   </form>
           </nav>
         </div>
@@ -141,88 +99,6 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-3" id="containerPast">
           
         </div>
-
-
-        <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-3">
-            <div class="col">
-              <div class="card h-100 p-3">
-                <img src="./assets/img/Museum_Tour.jpg"class="card-img-top object-fit-cover h-100 image" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-center titulo">Musseum</h5>
-                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between mt-5 mb-0">
-                    <p>Price $99</p>
-                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 p-3">
-                <img src="./assets/img/Costume_Party.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-center titulo">Costume Party</h5>
-                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between mt-5 mb-0">
-                    <p>Price $99</p>
-                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 p-3">
-                <img src="./assets/img/Food_Fair.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-center titulo">Food Fair</h5>
-                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <div class="d-flex justify-content-between mt-5 mb-0">
-                    <p>Price $99</p>
-                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 p-3">
-                <img src="./assets/img/Marathon.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-center titulo">Marathon</h5>
-                  <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between mt-5 mb-0">
-                    <p>Price $99</p>
-                    <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 p-3">
-                  <img src="./assets/img/Cinema.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title text-center titulo">Cinema</h5>
-                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between mt-5 mb-0">
-                        <p>Price $99</p>
-                        <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-3">
-                  <img src="./assets/img/Music_Concert.jpg" class="card-img-top object-fit-cover h-100 image" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title text-center titulo">Music Concert</h5>
-                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between mt-5 mb-0">
-                        <p>Price $99</p>
-                        <a href="./description.html" class="btn btn-outline-danger shadow">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div> -->
     </main>
 
     <footer class="bg-warning bg-gradient d-flex justify-content-between align-items-center mt-3 pb-1">
@@ -243,9 +119,8 @@
         </div>
     </footer>    
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/past.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
 </body>
 </html>
