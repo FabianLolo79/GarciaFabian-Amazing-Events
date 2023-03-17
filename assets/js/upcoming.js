@@ -6,44 +6,31 @@ async function getData() {
         let data = await response.json();
         let dataEvents = data.events;
         
-        //console.log(data);
-         // creo un array para filtrar los "after"
+        let up_events = dataEvents.filter(elemento => new Date(elemento.date) > new Date(data.currentDate));
 
-    const indexDate = Date.parse(data.currentDate);
-    //console.log(indexDate);
-
-    for (let event of dataEvents) {
-        if (Date.parse(event.date) > indexDate) {
-            after.push(event);
-            console.log(event);
-        }
-    }
-        showCards(after, 'containerHome');
-        //console.log(showCards(after, 'containerHome'))
-        createChecks(dataEvents);
-        filterAll(dataEvents);
+        showCards(up_events, 'containerHome');
+        createChecks(up_events);
+        filterAll(up_events);
 
         let checkboxes = document.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(check => check.addEventListener("change", () => {
             selectChecked = Array.from(checkboxes).filter(check => check.checked)
                 .map(elem => elem.value)
             //console.log("Hola check");
-            filterAll(dataEvents);
+            filterAll(up_events);
         }))
         
 
         let inputSearch = document.getElementById('input-search');
         inputSearch.addEventListener('keyup', (e) => {
             inputText = inputSearch.value;
-            filterAll(dataEvents);
+            filterAll(up_events);
         })
     } catch (error) {
         console.log(error)
     }
 }
 getData();
-
-let after = [];
 
 /* ---------- Mostrar tarjetas dinámicas ----------*/
 function showCards(array, idcontainer) {

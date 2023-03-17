@@ -5,25 +5,25 @@ async function getData() {
         let response = await fetch(urlApi);
         let data = await response.json();
         let dataEvents = data.events;
-        //console.log(dataEvents);
-        //console.log(data);
 
-        showCards(dataEvents, 'containerHome');
-        createChecks(dataEvents);
-        filterAll(dataEvents);
+        let past_events = dataEvents.filter(elemento => new Date(elemento.date) < new Date(data.currentDate));
+        
+        showCards(past_events, 'containerHome');
+        createChecks(past_events);
+        filterAll(past_events);
 
         let checkboxes = document.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(check => check.addEventListener("change", () => {
             selectChecked = Array.from(checkboxes).filter(check => check.checked)
                 .map(elem => elem.value)
             //console.log("Hola check");
-            filterAll(dataEvents);
+            filterAll(past_events);
         }))
 
         let inputSearch = document.getElementById('input-search');
         inputSearch.addEventListener('keyup', (e) => {
             inputText = inputSearch.value;
-            filterAll(dataEvents);
+            filterAll(past_events);
         })
     } catch (error) {
         console.log(error)
