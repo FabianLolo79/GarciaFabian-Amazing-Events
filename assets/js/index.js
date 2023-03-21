@@ -1,6 +1,35 @@
-let urlApi = "https://mindhub-xj03.onrender.com/api/amazing ";
 
-async function getData() {
+
+const { createApp } = Vue
+let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
+
+
+    createApp( {
+            data() {
+                return {
+                eventos: [],
+                checked: []
+                //message: 'Hello Vue!'
+
+                }
+            },
+            created() {
+                fetch(urlApi)
+                .then(response => response.json())
+                .then(data => {
+                    this.eventos = data.events
+                    //console.log(this.eventos)
+                    this.checked = [...new Set(this.eventos.map(category => category.category)) ]
+                }).catch(error => console.log(error))
+            }
+        
+    }).mount('#app')
+
+
+
+
+
+/* async function getData() {
     try {
         let response = await fetch(urlApi);
         let data = await response.json();
@@ -29,10 +58,10 @@ async function getData() {
         console.log(error)
     }
 }
-getData();
+getData(); */
 
 /* ---------- Mostrar tarjetas dinámicas ----------*/
-function showCards(array, idcontainer) {
+/* function showCards(array, idcontainer) {
     let container = document.getElementById(idcontainer);
     let fragment = document.createDocumentFragment();
     //console.log(array);
@@ -64,11 +93,11 @@ function showCards(array, idcontainer) {
         }
         container.appendChild(fragment);
     }
-}
+} */
 //showCards(data.events, 'containerHome');
 
 /* ---------- Checks Category dinamic ----------*/
-function createChecks(array) {
+/* function createChecks(array) {
     let containerCheckHome = document.getElementById('containerCheckHome');
     let fragmentCheck = document.createDocumentFragment();
     let checkCategory = [...(new Set(array.map(data => data.category)))];
@@ -88,11 +117,11 @@ function createChecks(array) {
         fragmentCheck.appendChild(form);
     })
     containerCheckHome.appendChild(fragmentCheck);
-}
+} */
 //createChecks(data.events);
 
 /* ---------- Filter cruzados ----------*/
-let selectChecked = [];
+/* let selectChecked = [];
 let inputText = '';
 
 function filterArrayToArray(arrayStrings, arrayObject) {
@@ -105,8 +134,8 @@ function filterArrayToString(value, arrayObject) {
 }
 
 /* ---------- Final Filter ----------*/
-function filterAll(array) {
+/* function filterAll(array) {
     let cardsChecksFiltered = filterArrayToArray(selectChecked, array);
     let cardsFinalFiltered = filterArrayToString(inputText, cardsChecksFiltered);
     showCards(cardsFinalFiltered, 'containerHome');
-}
+}  */
